@@ -1,0 +1,26 @@
+<p>
+    model-driven works!
+</p>
+<div>
+    <form [formGroup]="loginForm" (ngSubmit)="submitData($event)">
+        <div>
+            <label for="name"> Name :
+          <input type="text" id="name" name="name"  [formControl]="name">
+          <span *ngIf="name.hasError('required')"> Name is invalid </span>
+        </label>
+        </div>
+        <div>
+            <label for="email"> Email :
+          <input type="text" id="email" name="email" value={{inpVal}}  [formControl]="email">
+        </label>
+        </div>
+        <div>
+            <label for="contact"> Number :
+          <input type="number" id="contact" name="contact" value={{inpVal1}} [formControl]="contact">
+        </label>
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</div>

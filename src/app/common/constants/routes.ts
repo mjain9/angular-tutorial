@@ -37,7 +37,7 @@ export const ROUTES = {
     forms: {
         name: 'Forms',
         path: 'forms',
-        module: '../views/forms/forms.module#FormsModule'
+        module: '../views/forms/forms.module#FormsModules'
     },
     pipes: {
         name: 'Pipes',

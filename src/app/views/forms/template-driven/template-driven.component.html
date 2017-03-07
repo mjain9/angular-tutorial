@@ -1,0 +1,25 @@
+<p>
+    template-driven works!
+</p>
+<div>
+    <form #detailForm="ngForm" (ngSubmit)="submitData(detailForm)">
+        <div>
+            <label for="name"> Name :
+          <input type="text" id="name" name="name"  ngModel required>
+        </label>
+        </div>
+        <div>
+            <label for="email"> Email :
+          <input type="text" id="email" name="email" value={{inpVal}} ngModel>
+        </label>
+        </div>
+        <div>
+            <label for="contact"> Number :
+          <input type="number" id="contact" name="contact" value={{inpVal1}} ngModel>
+        </label>
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</div>
