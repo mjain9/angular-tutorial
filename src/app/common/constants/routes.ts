@@ -47,7 +47,7 @@ export const ROUTES = {
     routing: {
         name: 'Routing',
         path: 'routing',
-        module: '../views/routing/routing.module#RoutingModule'
+        module: '../views/routing/routing.module#RoutingModules'
     },
     zone: {
         name: 'Zone',

@@ -9,7 +9,8 @@ import { NgForm } from '@angular/forms';
 })
 export class TemplateDrivenComponent implements OnInit {
  constructor() { }
-inpVal: "heklo";
+inpVal: String= "hello";
+
 submitData(detailForm: NgForm){
   console.log(detailForm.value);
 }

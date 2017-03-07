@@ -5,9 +5,11 @@
     <form [formGroup]="loginForm" (ngSubmit)="submitData($event)">
         <div>
             <label for="name"> Name :
-          <input type="text" id="name" name="name"  [formControl]="name">
-          <span *ngIf="name.hasError('required')"> Name is invalid </span>
-        </label>
+                <input type="text" id="name" name="name"  [formControl]="name">
+            </label>
+            <span [hidden]="name.valid || name.untouched">  
+              <span *ngIf="!name.hasError('required')"> Name is invalid </span>
+            </span>
         </div>
         <div>
             <label for="email"> Email :
